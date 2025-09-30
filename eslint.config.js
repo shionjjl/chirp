@@ -33,7 +33,7 @@ export default tseslint.config(
         "error",
         { checksVoidReturn: { attributes: false } },
       ],
-      "@typescript-eslint/prefer-optional-chain": "off",
+      "@typescript-eslint/prefer-optional-chain": "off", // turn off temporarily due to blocking deployment
     },
   },
   {
