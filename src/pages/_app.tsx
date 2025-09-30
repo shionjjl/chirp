@@ -1,5 +1,6 @@
 import { type AppType } from "next/app";
 import { Geist } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 import { api } from "~/utils/api";
 
@@ -14,6 +15,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <div className={geist.className}>
       <ClerkProvider {...pageProps}>
+        <Toaster position="bottom-center" />
         <Component {...pageProps} />
       </ClerkProvider>
       {/*
